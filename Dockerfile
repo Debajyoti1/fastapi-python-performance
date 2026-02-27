@@ -29,4 +29,4 @@ ENV PATH="/app/.venv/bin:$PATH"
 EXPOSE 8000
 
 # Run FastAPI with Uvicorn in production
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000","--log-config", "log_config.json", "--workers", "8"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000","--log-config", "log_config.json", "--workers", "3"]
